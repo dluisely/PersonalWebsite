@@ -1,0 +1,222 @@
+body {
+    background-color:#3446a3;
+    margin-top: 35px;
+    font-family: monospace;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.top-header-logo {
+    display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #f9dd9a;
+    color: #3446a3;
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+}
+
+.top-header-logo:hover {
+    box-shadow: 0px 0px 10px 10px #ff71ce;
+    transition: all 0.5s ease;
+}
+
+.top-header-buttons {
+    display: flex;
+    align-items: right;
+}
+
+.top-header-nav li {
+    float:left;
+    font-weight: bolder;
+    margin-right: auto;
+    list-style: none;
+    padding-left: 16px;
+    color: #ff71ce;
+    font-size: 16px;
+}
+
+.resume-button {
+    color: #f9dd9a;
+    border: 3px solid #f9dd9a;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    font-family: monospace;
+    line-height: 1;
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 16px;
+    float: right;
+}
+
+.computer-screen {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.screen-background {
+    background-color: #018281;
+    height: 900px;
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    position: relative;
+    cursor:url(cursor.png), auto;
+}
+
+.apps {
+    margin-left: -30px;
+    margin-top: -20px;
+}
+
+.apps li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 35px;
+}
+
+.apps li img {
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.apps li span {
+    margin-top: -30px;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #C0C0C0;
+    height: 45px;
+    box-sizing: border-box;
+    border-top: 3px solid white;
+}
+
+.time {
+    background-color: #C0C0C0;
+    height: 30px;
+    width: 105px;
+    float: right;
+    margin-top: -75px;
+    margin-right: 10px;
+    box-shadow: inset 2px 2px rgba(0,0,0,0.45), 
+                inset -1px -1px white;
+}
+
+#clock {
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-bar {
+    width: 180px;
+    height: 260px;
+    background-color: #C0C0C0;
+    margin-left: 30px;
+    margin-top: 266px;
+    box-shadow: 2px 2px black, /* top-left */
+                1px -1px white; /* bottom-left */
+    position: relative;
+    overflow: hidden;
+}
+
+.windows-logo {
+    position: absolute;
+    top: 42.5%; /* Add this to move the element down */
+    -webkit-transform: rotate(-90deg);
+    background-color: #7B7D7A;
+    margin-left: -110px;
+    width: 260.5px;
+    height: 40px;
+}
+
+.windows-logo #nav-logo {
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #C0C0C0;
+}
+
+.windows-logo #nav-num {
+    font-size: 35px;
+    color: white;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -9px;
+}
+
+.nav-bar li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: monospace;
+    margin-bottom: 5px;
+    font-size: 15px;
+    margin-left: 50px;
+    color: black;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar li:hover {
+    color: white;
+    background-color: #000081;
+    width: 100%;
+}
+
+.nav-bar img {
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 10px;
+}
+
+#start-button {
+    margin-top: -25px;
+    margin-left: 10px;
+}
+
+#start-button.active img {
+    content: url("pressed_start.png");
+}
+
